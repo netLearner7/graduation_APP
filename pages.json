@@ -1,0 +1,74 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/order/order",
+			"style": {
+				"navigationBarTitleText": "今日行程",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/dateils/dateils",
+			"style": {
+				"navigationBarTitleText": "会议详情"				
+			}
+		},
+		{
+			"path": "pages/attend/attend",
+			"style": {
+				"navigationBarTitleText": "创建会议"				
+			}
+		},
+		{
+			"path": "pages/signin/signin",
+			"style": {
+				"navigationBarTitleText": "会议签到"				
+			}
+		}
+		
+	],
+	"tabBar":{
+			"color": "#7A7E83",
+		    "selectedColor": "#8a8a8a",
+		    "borderStyle": "black",
+		    "backgroundColor": "#ffffff",
+			// "midButton":{
+			// 	"text":"退出",
+			// 	"iconPath":"static/icon/home.png"
+				
+			// },
+		    "list": [
+				{
+				    "pagePath": "pages/index/index",
+				    "text": "首页",
+					"iconPath":"static/icon/home.png",
+					"selectedIconPath":"static/icon/home1.png"
+				},
+				{
+					"pagePath": "pages/order/order",
+					"text": "行程",
+					"iconPath":"static/icon/order.png",
+					"selectedIconPath":"static/icon/order1.png"
+				}
+			]
+	},
+	"globalStyle": {
+		
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
